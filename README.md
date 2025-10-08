@@ -1,13 +1,7 @@
 <div align = center>
-  
-<a href="https://discord.gg/AYbJ9MJez7">
-    <img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FmT5YqjaJFh%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&style=for-the-badge&logo=discord&logoSize=auto&label=The%20HyDe%20Project&labelColor=ebbcba&color=c79bf0">
-  </a>
+  # ArcadeOS 🌟
 </div>
-
-###### _<div align="right"><a id=-design-by-t2></a><sub>// design by t2</sub></div>_
-
-![hyde_banner](Source/assets/hyde_banner.png)
+<!-- You can create a cool banner for ArcadeOS and replace the image link above! -->
 
 <!--
 Multi-language README support
@@ -50,9 +44,6 @@ Multi-language README support
   </div>
 </div>
 
-Check this out for the full note:
-[Journey to HyDE and beyond](./Hyprdots-to-HyDE.md)
-
 <!--
 <img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FmT5YqjaJFh%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&style=for-the-badge&logo=discord&logoSize=auto&label=The%20HyDe%20Project&labelColor=ebbcba&color=c79bf0">
 
@@ -67,75 +58,58 @@ Check this out for the full note:
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=INSTALLATION" width="450"/>
 
 ---
-
-The installation script is designed for a minimal [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux) install, but **may** work on some [Arch-based distros](https://wiki.archlinux.org/title/Arch-based_distributions).
-While installing HyDE alongside another [DE](https://wiki.archlinux.org/title/Desktop_environment)/[WM](https://wiki.archlinux.org/title/Window_manager) should work, due to it being a heavily customized setup, it **will** conflict with your [GTK](https://wiki.archlinux.org/title/GTK)/[Qt](https://wiki.archlinux.org/title/Qt) theming, [Shell](https://wiki.archlinux.org/title/Command-line_shell), [SDDM](https://wiki.archlinux.org/title/SDDM), [GRUB](https://wiki.archlinux.org/title/GRUB), etc. and is at your own risk.
-
-For NixOS support there is a separate project being maintained @ [Hydenix](https://github.com/richen604/hydenix/tree/main)
-
-> [!IMPORTANT]
-> The install script will auto-detect an NVIDIA card and install nvidia-dkms drivers for your kernel.
-> Please ensure that your NVIDIA card supports dkms drivers in the list provided [here](https://wiki.archlinux.org/title/NVIDIA).
+This installer is designed for a **minimal, fresh Arch Linux installation**.
 
 > [!CAUTION]
-> The script modifies your `grub` or `systemd-boot` config to enable NVIDIA DRM.
+> It is not recommended to run this on a system that already has a Desktop Environment like GNOME or KDE installed, as it will likely overwrite your existing settings.
 
-To install, execute the following commands:
+> [!NOTE]
+> The script will automatically detect if an NVIDIA graphics card is present and install the appropriate drivers for you.
+
+---
+
+### Quick Install Steps
+
+Open a terminal and run the following commands:
 
 ```shell
-pacman -S --needed git base-devel
-git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
-cd ~/HyDE/Scripts
+# 1. Install Git, which is needed to download the files
+sudo pacman -S --needed git
+
+# 2. Clone the ArcadeOS repository from GitHub
+# This downloads the installer and all configuration files.
+git clone https://github.com/asytuyf/ArcadeOS.git
+
+# 3. Navigate into the Scripts directory
+cd ArcadeOS/Scripts
+
+# 4. Run the installer
 ./install.sh
-```
 
-> [!TIP]
-> You can also add any other apps you wish to install alongside HyDE to `Scripts/pkg_user.lst` and pass the file as a parameter to install it like so:
->
-> ```shell
-> ./install.sh pkg_user.lst
-> ```
+  
 
-> [!IMPORTANT]
-> Refer your list from `Scripts/pkg_extra.lst`
-> or you can `cp Scripts/pkg_extra.lst Scripts/pkg_user.lst` if you wish to install all extra packages.
+Once the script has finished, reboot your system to launch into your new ArcadeOS desktop.
 
-<!--
 
-As a second install option, you can also use `Hyde-install`, which might be easier for some.
-View installation instructions for HyDE in [Hyde-cli - Usage](https://github.com/kRHYME7/Hyde-cli?tab=readme-ov-file#usage).
--->
 
-Please reboot after the install script completes and takes you to the SDDM login screen (or black screen) for the first time.
-For more details, please refer to the [installation wiki](https://github.com/HyDE-Project/HyDE/wiki/installation).
+## About The Project
+---
+ArcadeOS is a custom set of dotfiles and an installation script for Arch Linux, built on Hyprland. Its goal is to create a clean, productive, and aesthetically pleasing workspace with minimal fuss.
 
-<div align="right">
-  <br>
-  <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
-</div>
+This project began as a way to create a perfectly tailored work environment for my dad and has evolved into a reusable, personalized setup. It is built upon the fantastic foundation of the Hyprdots project.
+Acknowledgements & License
 
-<div align="right">
-  <br>
-  <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
-</div>
+This project is a heavily customized fork of the Hyprdots project by prasanthrangan. All credit for the foundational work, the brilliant installation scripts, and the original theming goes to the original author and contributors.
+
+This project, and all my modifications, are licensed under the GPL-3.0, in accordance with the original Hyprdots license.
 
 <a id="contributing"></a>
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=CONTRIBUTING" width="450"/>
 
 ---
 
-We welcome contributions from the community! To get started:
-
-- Check our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines
-- Read about team roles in [TEAM_ROLES.md](TEAM_ROLES.md)
-- Review our release process in [RELEASE_POLICY.md](RELEASE_POLICY.md)
-- Add yourself to [CONTRIBUTORS.md](CONTRIBUTORS.md) when making your first PR
-
-Whether you're helping with code, testing, or documentation, we appreciate your support in making HyDE better for everyone. Thank you!
-
 <div align="right">
   <br>
-  <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
 <a id="updating"></a>
@@ -160,52 +134,12 @@ As a second update option, you can use `Hyde restore ...`, which does have a bet
 For more details, you can refer to [Hyde-cli - dots management wiki](https://github.com/kRHYME7/Hyde-cli/wiki/Dots-Management).
 -->
 
-<div align="right">
-  <br>
-  <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
-</div>
-
-<a id="hydevm"></a>
-<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=HYDEVM" width="450"/>
-
----
-
-HyDEVM is a script that allows you to run HyDE in a virtual machine for testing and development.
-
-## Quick Start
-
-### Arch Linux
-
-```bash
-# Download and run (will auto-detect missing packages)
-curl -L https://raw.githubusercontent.com/HyDE-Project/HyDE/main/Scripts/hydevm/hydevm.sh -o hydevm
-chmod +x hydevm
-./hydevm
-```
-
-### NixOS (or Nix)
-
-```bash
-# Using flakes from HyDE repository
-nix run github:HyDE-Project/HyDE
-
-# Or if you have the repository cloned locally
-nix run .
-```
-
-For more details, please refer to the [HyDEVM README](Scripts/hydevm/README.md).
-
-<div align="right">
-  <br>
-  <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
-</div>
-
 <a id="themes"></a>
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=THEMES" width="450"/>
 
 ---
 
-All our official themes are stored in a separate repository, allowing users to install them using themepatcher.
+All the official themes (By the HyDE team) are stored in a separate repository, allowing users to install them using themepatcher.
 For more information, visit [HyDE-Project/hyde-themes](https://github.com/HyDE-Project/hyde-themes).
 
 <div align="center">
@@ -231,11 +165,6 @@ For more information, visit [HyDE-Project/hyde-themes](https://github.com/HyDE-P
 > Everyone, including you can create, maintain, and share additional themes, all of which can be installed using themepatcher!
 > To create your own custom theme, please refer to the [theming wiki](https://github.com/prasanthrangan/hyprdots/wiki/Theming).
 > If you wish to have your hyde theme showcased, or you want to find some non-official themes, visit [kRHYME7/hyde-gallery](https://github.com/kRHYME7/hyde-gallery)!
-
-<div align="right">
-  <br>
-  <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
-</div>
 
 <a id="styles"></a>
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=STYLES" width="450"/>
@@ -282,45 +211,9 @@ For more information, visit [HyDE-Project/hyde-themes](https://github.com/HyDE-P
 <img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/game_launch_5.png"/></td></tr></table></div>
 
 
+## Contributors of HyDE ✨
 
-<a id="star_history"></a>
-<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=STARS" width="450"/>
-
----
-
-<a href="https://star-history.com/#hyde-project/hyde&hyde-project/hyde-gallery&hyde-project/hyde-themes&Timeline">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=hyde-project/hyde&type=Timeline&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=hyde-project/hyde&type=Timeline" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=hyde-project/hyde&type=Timeline" />
- </picture>
-</a>
-
----
-
-<a id="credits"></a>
-<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=THANK YOU!" width="450"/>
-
-
-- [See the full Credits page here](./CREDITS.md).
-
-
-
----
-
-<div align="right">
-  <br>
-  <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
-</div>
-
-<div align="right">
-  <sub>Last edited on: 27/02/2025<span id="last-edited"></span></sub>
-</div>
-
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -333,10 +226,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </tr>
   </tbody>
 </table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
