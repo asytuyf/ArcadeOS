@@ -75,6 +75,7 @@ cd ArcadeOS/Scripts
 
 # 4. Run the installer
 ./install.sh
+```
 
   
 
