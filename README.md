@@ -1,7 +1,7 @@
 <div align = center>
-  # ArcadeOS 🌟
+  <h1>ArcadeOS 🌟</h1>
 </div>
-<!-- You can create a cool banner for ArcadeOS and replace the image link above! -->
+<!-- TODO : create a cool banner for ArcadeOS and replace the image link above! -->
 
 <!--
 Multi-language README support
@@ -33,16 +33,6 @@ Multi-language README support
 <a href="https://discord.gg/qWehcFJxPa"><kbd> <br> Discord <br> </kbd></a>
 
 </div><br><br>
-
-<div align="center">
-  <div style="display: flex; flex-wrap: nowrap; justify-content: center;">
-    <img src="Source/assets/archlinux.png" alt="Arch Linux" style="width: 10%; margin: 10px;"/>
-    <img src="Source/assets/cachyos.png" alt="CachyOS" style="width: 10%; margin: 10px;"/>
-    <img src="Source/assets/endeavouros.png" alt="EndeavourOS" style="width: 10%; margin: 10px;"/>
-    <img src="Source/assets/garuda.png" alt="Garuda" style="width: 10%; margin: 10px;"/>
-    <img src="Source/assets/nixos.png" alt="NixOS" style="width: 10%; margin: 10px;"/>
-  </div>
-</div>
 
 <!--
 <img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FmT5YqjaJFh%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&style=for-the-badge&logo=discord&logoSize=auto&label=The%20HyDe%20Project&labelColor=ebbcba&color=c79bf0">
